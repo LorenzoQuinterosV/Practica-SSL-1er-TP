@@ -88,8 +88,7 @@ int SizeCompare(const char * cadena1, const char * cadena2){
 }
 
 char * Concatenate(char * cadena1, char * cadena2){
-    if(cadena1 == NULL || *cadena1 == '\0'){
-        return cadena2;}
+    if(cadena1 == NULL) return NULL;
 
     if(cadena2 == NULL || *cadena2 == '\0'){
         return cadena1;}
@@ -105,8 +104,9 @@ char * Concatenate(char * cadena1, char * cadena2){
 }
 
 char * Potenciar(char * cadena, __u_int potencia){
-    if (cadena == NULL || *cadena == '\0'){
-        return cadena;}
+    if (cadena == NULL){
+        return NULL;
+    }
     
     int tamaño = (int)GetLength(cadena);
     char * auxiliar = malloc((tamaño * (int) potencia) + 1);
@@ -124,8 +124,9 @@ char * Potenciar(char * cadena, __u_int potencia){
 }
 
 char * revertir(char * cadena){
-    if (cadena == NULL || *cadena == '\0'){
-        return cadena;}
+    if (cadena == NULL){
+        return NULL;
+    }
     
     int tamaño = (int)GetLength(cadena);
     char * auxiliar = malloc(tamaño + 1);
