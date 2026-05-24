@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 
 bool IsEmpty(const char * cadena);
@@ -25,6 +26,15 @@ int ToInteger(const char * cadena);
 
 
 int SizeCompare(const char * cadena1, const char * cadena2);
+
+
+char * Concatenate(char * cadena1, const char * cadena2);
+
+
+char * Potenciar(char * cadena, __u_int potencia);
+
+
+char * revertir(char * cadena);
 
 
 #endif
