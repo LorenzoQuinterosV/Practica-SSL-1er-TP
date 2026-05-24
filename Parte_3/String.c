@@ -87,7 +87,7 @@ int SizeCompare(const char * cadena1, const char * cadena2){
     return (int) GetLength(cadena1) - (int) GetLength(cadena2);
 }
 
-char * Concatenate(char * cadena1, const char * cadena2){
+char * Concatenate(char * cadena1, char * cadena2){
     if(cadena1 == NULL || *cadena1 == '\0'){
         return cadena2;}
 

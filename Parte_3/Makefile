@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -g -std=23 -pedantic-errors -Wall
-PROGRAMAS = enlineas longitudes mayorlongitud todosiguales suma
+CFLAGS = -g -std=c2x -pedantic-errors -Wall
+PROGRAMAS = enlineas #longitudes mayorlongitud todosiguales suma
 OBJ = String.o
 
 .PHONY = all test clean
