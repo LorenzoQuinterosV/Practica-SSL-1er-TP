@@ -7,7 +7,7 @@ int main(int argc, char *argv[]){
 
     for(int i = 1; i<argc; i++){
         char* aux = argv[i];
-        int tamaño = (int)GetLenth(aux);
+        int tamaño = (int)GetLength(aux);
         printf("el argumento %s tiene tamaño %d \n", aux, tamaño);
     }    
     return 0;

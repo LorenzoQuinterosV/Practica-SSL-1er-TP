@@ -1,5 +1,4 @@
 #include "String.h"
-#include "String.c"
 #include <assert.h>
 
 int main(){
@@ -7,8 +6,8 @@ int main(){
     assert(IsEmpty("HOLAAA") == false);
     assert(IsEmpty("") == true);
 
-    assert(GetLength("tamaño 8") == 8);
-    assert(GetLength("tamaño") == 6);
+    assert(GetLength("tamano 8") == 8);
+    assert(GetLength("tamano") == 6);
 
     assert(AreEqual("hola","chau") == false);
     assert(AreEqual("hola","hola") == true);

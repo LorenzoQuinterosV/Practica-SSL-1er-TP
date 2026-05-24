@@ -15,6 +15,9 @@ size_t GetLength(const char * cadena);
 bool AreEqual(const char * cadena1, const char * cadena2);
 
 
+bool AreEqualNotRecursive(const char * cadena1, const char * cadena2);
+
+
 bool AreDecimalDigits(const char * cadena);
 
 
