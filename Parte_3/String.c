@@ -93,10 +93,13 @@ char * Concatenate(char * cadena1, char * cadena2){
 
     if(cadena2 == NULL || *cadena2 == '\0'){
         return cadena1;}
-
+    
+    int tamañoC2 = (int) GetLength(cadena2);
     int tamañoC1 = (int) GetLength(cadena1);
     for(int i=0; i < (int) GetLength(cadena2); i++){
         cadena1[tamañoC1+i]=cadena2[i];}
+
+    cadena1[tamañoC1 + tamañoC2] = '\0';
 
     return cadena1;
 }
